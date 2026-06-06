@@ -19,28 +19,10 @@ export default function OurPlant() {
               Nuestra planta opera en el Polo Industrial San Lorenzo, a menos de 5 km del segundo
               corredor de crushing de soja más grande del mundo.
             </p>
-            <p className="text-gray-600 text-base leading-relaxed mb-5">
-              6.000 m² de superficie, tres líneas de producción independientes, laboratorio propio
-              de I+D y calidad, y tecnología automatizada que garantiza consistencia lote a lote.
-            </p>
             <p className="text-gray-600 text-base leading-relaxed mb-10">
               Producimos SPI, SPC y TVP con los mismos estándares de calidad que los proveedores
               internacionales — con entrega en menos de 72 hs y soporte técnico local.
             </p>
-
-            {/* Key stats */}
-            <div className="flex flex-wrap gap-8">
-              {[
-                { value: '6.000 m²', label: 'Superficie de planta' },
-                { value: '3', label: 'Líneas de producción' },
-                { value: '< 72 hs', label: 'Tiempo de entrega' },
-              ].map((s) => (
-                <div key={s.label}>
-                  <p className="font-display text-2xl font-bold text-pt-dark">{s.value}</p>
-                  <p className="text-gray-500 text-sm mt-0.5">{s.label}</p>
-                </div>
-              ))}
-            </div>
           </AnimatedSection>
 
           {/* Columna derecha — Collage de imágenes */}
@@ -48,7 +30,7 @@ export default function OurPlant() {
             {/* Foto grande de fondo */}
             <div className="absolute inset-0 rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
                 alt="Planta industrial Pro-Terra"
                 fill
                 className="object-cover object-center"
@@ -62,7 +44,7 @@ export default function OurPlant() {
               style={{ transform: 'translateX(20px) rotate(2deg)' }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1581093458791-9d58e74010b8?w=400&q=80"
+                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&q=80"
                 alt="Laboratorio de calidad Pro-Terra"
                 fill
                 className="object-cover"
@@ -96,7 +78,7 @@ export default function OurPlant() {
           {/* Mobile: imagen simple */}
           <AnimatedSection delay={0.2} className="relative h-72 rounded-2xl overflow-hidden lg:hidden">
             <Image
-              src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
               alt="Planta industrial Pro-Terra"
               fill
               className="object-cover"
