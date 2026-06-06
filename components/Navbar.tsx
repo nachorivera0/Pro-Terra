@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const links = [
-  { label: 'Inicio',         href: '#inicio' },
-  { label: 'Productos',      href: '#productos' },
-  { label: 'Qué Hacemos',   href: '#que-hacemos' },
+  { label: 'Inicio',          href: '#inicio' },
+  { label: 'Productos',       href: '#productos' },
+  { label: 'Qué Hacemos',    href: '#que-hacemos' },
   { label: 'Sustentabilidad', href: '#sustentabilidad' },
-  { label: 'Clientes',       href: '#clientes' },
-  { label: 'Contacto',       href: '#contacto' },
+  { label: 'Clientes',        href: '#clientes' },
+  { label: 'Contacto',        href: '#contacto' },
 ];
 
 export default function Navbar() {

@@ -1,23 +1,26 @@
+import { UtensilsCrossed, Sprout, Dumbbell, Milk } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
+const iconClass = 'w-7 h-7 text-[#2E7D3E] flex-shrink-0 mt-0.5';
 
 const industries = [
   {
-    emoji: '🥩',
+    icon: <UtensilsCrossed className={iconClass} />,
     title: 'Frigoríficos',
     text: 'Formulaciones de hamburguesas, medallones, chacinados y embutidos. SPC y TVP para optimizar rendimiento y costos por tonelada de producto terminado.',
   },
   {
-    emoji: '🌱',
+    icon: <Sprout className={iconClass} />,
     title: 'Plant-based y análogos cárnicos',
     text: 'Soluciones para productores de hamburguesas vegetales, medallones y proteínas análogas. Flexibilidad en volumen y soporte técnico local.',
   },
   {
-    emoji: '💪',
+    icon: <Dumbbell className={iconClass} />,
     title: 'Suplementos deportivos y nutrición funcional',
     text: 'SPI de alta pureza para proteínas en polvo, barras y bebidas. Perfil aminoacídico completo, sabor neutro, etiquetado limpio.',
   },
   {
-    emoji: '🥛',
+    icon: <Milk className={iconClass} />,
     title: 'Industria láctea y alimentos funcionales',
     text: 'SPI para yogures proteicos, bebidas vegetales y alimentos enriquecidos. Emulsificación, gelificación y estabilidad térmica garantizada.',
   },
@@ -43,7 +46,7 @@ export default function Industries() {
           {industries.map((ind, i) => (
             <AnimatedSection key={ind.title} delay={i * 0.1}>
               <div className="group flex gap-6 p-8 rounded-2xl bg-white border border-gray-100 hover:border-pt-lime hover:shadow-lg transition-all duration-300 h-full">
-                <div className="text-4xl flex-shrink-0 mt-1">{ind.emoji}</div>
+                {ind.icon}
                 <div>
                   <h3 className="font-display text-lg font-semibold text-pt-gray mb-3">
                     {ind.title}

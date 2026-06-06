@@ -8,6 +8,7 @@ const links = [
   { label: 'Contacto',        href: '#contacto' },
 ];
 
+
 export default function Footer() {
   return (
     <footer className="bg-pt-gray text-white">
@@ -70,18 +71,21 @@ export default function Footer() {
             </ul>
 
             {/* ISO mini badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full border border-white/15">
-              <svg className="w-4 h-4 text-pt-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-xs font-semibold text-white/80">ISO 22000</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-xl border border-white/15">
+              <Image
+                src="/iso22000.png"
+                alt="ISO 22000"
+                width={60}
+                height={40}
+                unoptimized
+                className="object-contain brightness-0 invert opacity-80"
+              />
             </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
-          <p>© 2027 Pro-Terra. Todos los derechos reservados.</p>
+          <p>© 2026 Pro-Terra. Todos los derechos reservados.</p>
           <p>Producido en el Polo Industrial San Lorenzo, Santa Fe, Argentina.</p>
         </div>
       </div>

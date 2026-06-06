@@ -1,7 +1,43 @@
 'use client';
 
 import { useState } from 'react';
+import { Mail, Phone, MapPin, Link2, Globe } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
+const iconClass = 'w-7 h-7 text-[#2E7D3E] flex-shrink-0 mt-0.5';
+
+const contactItems = [
+  {
+    icon: <Mail className={iconClass} />,
+    label: 'Email',
+    value: 'contacto@proterra.com.ar',
+    href: 'mailto:contacto@proterra.com.ar',
+  },
+  {
+    icon: <Phone className={iconClass} />,
+    label: 'Teléfono',
+    value: '+54 9 11 2305-0912',
+    href: 'tel:+5491123050912',
+  },
+  {
+    icon: <MapPin className={iconClass} />,
+    label: 'Ubicación',
+    value: 'San Lorenzo, Santa Fe, Argentina',
+    href: null,
+  },
+  {
+    icon: <Link2 className={iconClass} />,
+    label: 'LinkedIn',
+    value: '/pro-terra-prerotienes',
+    href: 'https://linkedin.com/company/pro-terra-prerotienes',
+  },
+  {
+    icon: <Globe className={iconClass} />,
+    label: 'Web',
+    value: 'www.proterra.com.ar',
+    href: 'https://www.proterra.com.ar',
+  },
+];
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -32,7 +68,7 @@ export default function Contact() {
             Hablemos
           </h2>
           <p className="text-white/70 max-w-xl mx-auto">
-            Primeros 2 años: enviamos muestras gratuitas de 1 kg a laboratorios de I+D y calidad.
+            Contanos sobre tu proceso y solicitá una muestra de nuestros productos.
           </p>
         </AnimatedSection>
 
@@ -117,46 +153,29 @@ export default function Contact() {
           </AnimatedSection>
 
           {/* Contact info */}
-          <AnimatedSection delay={0.2} className="lg:col-span-2 flex flex-col gap-6">
-            <div className="space-y-5">
-              {[
-                { icon: '📧', label: 'Email', value: 'contacto@proterra.com.ar', href: 'mailto:contacto@proterra.com.ar' },
-                { icon: '📞', label: 'Teléfono', value: '+54 9 11 2305-0912', href: 'tel:+5491123050912' },
-                { icon: '📍', label: 'Ubicación', value: 'San Lorenzo, Santa Fe, Argentina', href: null },
-                { icon: '🔗', label: 'LinkedIn', value: '/pro-terra-prerotienes', href: 'https://linkedin.com/company/pro-terra-prerotienes' },
-                { icon: '🌐', label: 'Web', value: 'www.proterra.com.ar', href: 'https://www.proterra.com.ar' },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-4">
-                  <span className="text-2xl mt-0.5">{item.icon}</span>
-                  <div>
-                    <p className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-0.5">
-                      {item.label}
-                    </p>
-                    {item.href ? (
-                      <a
-                        href={item.href}
-                        target={item.href.startsWith('http') ? '_blank' : undefined}
-                        rel="noreferrer"
-                        className="text-white hover:text-pt-lime transition-colors text-sm"
-                      >
-                        {item.value}
-                      </a>
-                    ) : (
-                      <p className="text-white text-sm">{item.value}</p>
-                    )}
-                  </div>
+          <AnimatedSection delay={0.2} className="lg:col-span-2 flex flex-col justify-start gap-5">
+            {contactItems.map((item) => (
+              <div key={item.label} className="flex items-start gap-4">
+                {item.icon}
+                <div>
+                  <p className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-0.5">
+                    {item.label}
+                  </p>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target={item.href.startsWith('http') ? '_blank' : undefined}
+                      rel="noreferrer"
+                      className="text-white hover:text-pt-lime transition-colors text-sm"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p className="text-white text-sm">{item.value}</p>
+                  )}
                 </div>
-              ))}
-            </div>
-
-            {/* Sample highlight */}
-            <div className="mt-4 p-6 rounded-2xl bg-pt-lime/10 border border-pt-lime/30">
-              <p className="text-pt-lime font-semibold text-sm mb-2">🎁 Muestras gratuitas</p>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Primeros 2 años: enviamos muestras de 1 kg a laboratorios de I+D y calidad sin costo.
-                Consultá disponibilidad por producto.
-              </p>
-            </div>
+              </div>
+            ))}
           </AnimatedSection>
         </div>
       </div>

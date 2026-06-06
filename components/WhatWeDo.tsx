@@ -1,3 +1,4 @@
+import { Award, Handshake, Lightbulb, Leaf, MapPin, Fuel, Recycle } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const processSteps = [
@@ -8,25 +9,27 @@ const processSteps = [
   { step: '05', label: 'Envasado y despacho', desc: 'Entrega < 72 hs' },
 ];
 
+const iconClass = 'w-7 h-7 text-[#2E7D3E]';
+
 const byproducts = [
   {
-    icon: '🛢️',
+    icon: <Fuel className="w-8 h-8 text-pt-lime" />,
     title: 'Aceite crudo de soja',
     text: 'Destinado íntegramente a la industria del biodiesel. Contribuimos a la transición energética de Argentina sin generar residuos industriales.',
   },
   {
-    icon: '🌾',
+    icon: <Recycle className="w-8 h-8 text-pt-lime" />,
     title: 'Okara y melaza de soja',
     text: 'Comercializados en el sector de nutrición animal (molinos de alimento balanceado y feedlots), completando el ciclo de valorización del grano.',
   },
 ];
 
 const values = [
-  { icon: '⭐', label: 'Excelencia técnica' },
-  { icon: '🤝', label: 'Integridad comercial' },
-  { icon: '💡', label: 'Innovación aplicada' },
-  { icon: '🌱', label: 'Sustentabilidad' },
-  { icon: '🏛️', label: 'Desarrollo regional' },
+  { icon: <Award className={iconClass} />, label: 'Excelencia técnica' },
+  { icon: <Handshake className={iconClass} />, label: 'Integridad comercial' },
+  { icon: <Lightbulb className={iconClass} />, label: 'Innovación aplicada' },
+  { icon: <Leaf className={iconClass} />, label: 'Sustentabilidad' },
+  { icon: <MapPin className={iconClass} />, label: 'Desarrollo regional' },
 ];
 
 export default function WhatWeDo() {
@@ -90,7 +93,7 @@ export default function WhatWeDo() {
                   key={b.title}
                   className="bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-pt-lime/50 transition-colors"
                 >
-                  <div className="text-3xl mb-3">{b.icon}</div>
+                  <div className="mb-3">{b.icon}</div>
                   <h4 className="font-semibold text-white mb-2">{b.title}</h4>
                   <p className="text-white/70 text-sm leading-relaxed">{b.text}</p>
                 </div>
@@ -108,7 +111,7 @@ export default function WhatWeDo() {
                     key={v.label}
                     className="flex items-center gap-2 px-4 py-2 bg-white/10 text-white text-sm rounded-full border border-white/15 hover:border-pt-lime transition-colors"
                   >
-                    <span>{v.icon}</span>
+                    {v.icon}
                     {v.label}
                   </span>
                 ))}

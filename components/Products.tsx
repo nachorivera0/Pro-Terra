@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+import { Droplets, CheckCircle, Shield, Waves, Layers, Grid3x3 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 interface Spec {
@@ -10,17 +12,21 @@ interface Spec {
 
 interface Product {
   id: string;
+  image: string;
   name: string;
   badge: string;
   description: string;
   specs: Spec[];
   applications: string[];
-  functional: string[];
+  functional: { label: string; icon: React.ReactNode }[];
 }
+
+const iconClass = 'w-7 h-7 text-[#2E7D3E]';
 
 const products: Product[] = [
   {
     id: 'spi',
+    image: '/SPI.png',
     name: 'Aislado de Proteína de Soja (SPI)',
     badge: 'Alta pureza · Grado alimenticio',
     description:
@@ -36,10 +42,15 @@ const products: Product[] = [
       { label: 'Presentación', value: 'Bolsas 20 kg / Big Bags 1000 kg' },
     ],
     applications: ['Cárnicos procesados', 'Bebidas proteicas', 'Suplementos deportivos', 'Alimentos funcionales'],
-    functional: ['Emulsificación', 'Sabor neutro', 'Control higroscópico'],
+    functional: [
+      { label: 'Emulsificación', icon: <Droplets className={iconClass} /> },
+      { label: 'Sabor neutro', icon: <CheckCircle className={iconClass} /> },
+      { label: 'Control higroscópico', icon: <Shield className={iconClass} /> },
+    ],
   },
   {
     id: 'spc',
+    image: '/SPC.png',
     name: 'Concentrado de Proteína de Soja (SPC)',
     badge: 'Alta versatilidad · Frigoríficos y panificados',
     description:
@@ -53,10 +64,15 @@ const products: Product[] = [
       { label: 'Presentación', value: 'Bolsas 20 kg / Big Bags 1000 kg' },
     ],
     applications: ['Cárnicos procesados', 'Panificación y confitería', 'Sustitutos lácteos', 'Sopas'],
-    functional: ['Emulsificación', 'Retención de agua', 'Alta dispersabilidad'],
+    functional: [
+      { label: 'Emulsificación', icon: <Droplets className={iconClass} /> },
+      { label: 'Retención de agua', icon: <Waves className={iconClass} /> },
+      { label: 'Alta dispersabilidad', icon: <Layers className={iconClass} /> },
+    ],
   },
   {
     id: 'tvp',
+    image: '/TVP.png',
     name: 'Proteína Vegetal Texturizada (TVP)',
     badge: 'Extensor cárnico · Alta eficiencia',
     description:
@@ -72,7 +88,11 @@ const products: Product[] = [
       { label: 'Presentación', value: 'Bolsas multicapa 20 kg' },
     ],
     applications: ['Hamburguesas y medallones', 'Chacinados y embutidos', 'Panificación', 'Sustitutos y sopas'],
-    functional: ['Retención de agua', 'Excelente textura post-hidratación', 'Versatilidad de corte'],
+    functional: [
+      { label: 'Retención de agua', icon: <Waves className={iconClass} /> },
+      { label: 'Textura post-hidratación', icon: <Grid3x3 className={iconClass} /> },
+      { label: 'Dispersabilidad', icon: <Layers className={iconClass} /> },
+    ],
   },
 ];
 
@@ -115,13 +135,27 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
     <>
       {showModal && <TechSheetModal onClose={() => setShowModal(false)} />}
       <AnimatedSection delay={index * 0.15} className="h-full">
-        <div className="group flex flex-col h-full rounded-2xl border border-gray-100 hover:border-pt-lime hover:shadow-xl transition-all duration-300 overflow-hidden">
-          {/* Header */}
-          <div className="bg-pt-dark text-white p-8">
-            <span className="inline-block px-3 py-1 bg-pt-lime/20 text-pt-lime text-xs font-semibold rounded-full mb-4">
-              {product.badge}
-            </span>
-            <h3 className="font-display text-xl font-bold mb-3">{product.name}</h3>
+        <div className="group flex flex-col h-full rounded-2xl border border-gray-100 hover:border-pt-lime hover:shadow-xl transition-all duration-300 overflow-hidden bg-white">
+          {/* Product image */}
+          <div className="relative h-[320px] w-full overflow-hidden rounded-t-2xl">
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              unoptimized
+            />
+            {/* badge overlay */}
+            <div className="absolute bottom-4 left-4">
+              <span className="inline-block px-3 py-1 bg-pt-dark/80 backdrop-blur-sm text-pt-lime text-xs font-semibold rounded-full">
+                {product.badge}
+              </span>
+            </div>
+          </div>
+
+          {/* Header text */}
+          <div className="bg-pt-dark text-white px-8 py-6">
+            <h3 className="font-display text-xl font-bold mb-2">{product.name}</h3>
             <p className="text-white/80 text-sm leading-relaxed">{product.description}</p>
           </div>
 
@@ -176,17 +210,15 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
                   </ul>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
                     Características funcionales
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-col gap-2">
                     {product.functional.map((f) => (
-                      <span
-                        key={f}
-                        className="px-3 py-1 bg-pt-light text-pt-dark text-xs font-medium rounded-full"
-                      >
-                        {f}
-                      </span>
+                      <div key={f.label} className="flex items-center gap-3">
+                        {f.icon}
+                        <span className="text-sm text-pt-gray">{f.label}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -225,7 +257,7 @@ export default function Products() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {products.map((p, i) => (
             <ProductCard key={p.id} product={p} index={i} />
           ))}
