@@ -72,14 +72,8 @@ export default function Footer() {
 
             {/* ISO mini badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-xl border border-white/15">
-              <Image
-                src="/iso22000.png"
-                alt="ISO 22000"
-                width={60}
-                height={40}
-                unoptimized
-                className="object-contain brightness-0 invert opacity-80"
-              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/iso22000.png" alt="ISO 22000" style={{ width: '80px', height: 'auto' }} />
             </div>
           </div>
         </div>

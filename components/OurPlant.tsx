@@ -30,7 +30,7 @@ export default function OurPlant() {
             {/* Foto grande de fondo */}
             <div className="absolute inset-0 rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
                 alt="Planta industrial Pro-Terra"
                 fill
                 className="object-cover object-center"
@@ -44,7 +44,7 @@ export default function OurPlant() {
               style={{ transform: 'translateX(20px) rotate(2deg)' }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&q=80"
+                src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=400&q=80"
                 alt="Laboratorio de calidad Pro-Terra"
                 fill
                 className="object-cover"
@@ -58,7 +58,7 @@ export default function OurPlant() {
               style={{ transform: 'translateX(20px) rotate(-1.5deg)' }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80"
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80"
                 alt="Industria alimentaria"
                 fill
                 className="object-cover"
@@ -78,7 +78,7 @@ export default function OurPlant() {
           {/* Mobile: imagen simple */}
           <AnimatedSection delay={0.2} className="relative h-72 rounded-2xl overflow-hidden lg:hidden">
             <Image
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80"
               alt="Planta industrial Pro-Terra"
               fill
               className="object-cover"
