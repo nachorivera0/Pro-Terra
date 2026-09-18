@@ -1,0 +1,236 @@
+{
+  "disclaimer": "Valores de especificación objetivo del proyecto, sujetos a validación con producto real. Para especificaciones vinculantes por lote, consultar al área de Calidad.",
+  "products": [
+    {
+      "id": "spi",
+      "sigla": "SPI",
+      "name": "Aislado de Proteína de Soja",
+      "fullName": "Aislado de Proteína de Soja (SPI)",
+      "image": "/SPI.png",
+      "badge": "Alta pureza · Grado alimenticio",
+      "summary": "El ingrediente proteico de mayor pureza de nuestro portafolio. Ideal para emulsiones cárnicas, bebidas proteicas y suplementos de alto rendimiento.",
+      "form": "Polvo fino",
+      "appearance": "Polvo fino, blanco crema, sabor neutro",
+      "yield": "1 t de SPI por cada 2,5 t de white flakes (≈ 40 % en masa)",
+      "process": "Se obtiene de la harina de soja desgrasada (white flakes): se extrae la fracción proteica soluble, se recupera, se purifica y se seca hasta obtener un polvo fino.",
+      "overview": [
+        "Polvo fino de color blanco crema y sabor neutro, con un contenido proteico mínimo del 90 % sobre base seca. Se obtiene de la harina de soja desgrasada: se extrae la fracción proteica soluble, se purifica y se seca. Ese tratamiento lo diferencia de una harina de soja convencional: su comportamiento físico y funcional fue modificado para intervenir en sistemas alimentarios complejos.",
+        "En productos cárnicos procesados (salchichas, mortadelas, hamburguesas y patés) sus proteínas se ubican en la interfase entre agua y grasa, estabilizan la emulsión y reducen las pérdidas durante la cocción. En bebidas y suplementos se controlan la solubilidad, la granulometría y la intensidad del tratamiento térmico para lograr una dispersión rápida, sin sedimentación ni sensación arenosa."
+      ],
+      "physical": [
+        { "label": "Proteína (base seca)", "value": "Mín. 90,0 %" },
+        { "label": "Humedad", "value": "Máx. 6,0 %" },
+        { "label": "Grasa libre", "value": "Máx. 1,0 %" },
+        { "label": "Cenizas", "value": "Máx. 5,0 %" },
+        { "label": "pH (suspensión al 5 %)", "value": "6,9 – 7,6" },
+        { "label": "Color", "value": "Blanco crema" }
+      ],
+      "microbiological": [
+        { "label": "Recuento total de aerobios", "value": "Máx. 10.000 UFC/g" },
+        { "label": "Salmonella", "value": "Ausencia en 25 g" },
+        { "label": "Coliformes", "value": "Máx. 10 UFC/g" },
+        { "label": "Escherichia coli", "value": "Máx. 3 UFC/g" },
+        { "label": "Mohos y levaduras", "value": "Máx. 100 UFC/g" }
+      ],
+      "controls": [
+        { "label": "Proteína", "text": "Es el criterio principal de liberación de lote y define al producto como aislado. Se expresa en base seca para eliminar el efecto de la humedad." },
+        { "label": "Humedad", "text": "El 6 % equilibra dos riesgos: con más humedad aumentan el apelmazamiento y el riesgo microbiológico; un polvo demasiado seco genera más material particulado y se rehidrata con dificultad." },
+        { "label": "Grasa y cenizas", "text": "Funcionan como indicadores de proceso: exceso de grasa señala extracción de aceite deficiente y acelera la oxidación; exceso de cenizas indica sales residuales por lavado insuficiente." },
+        { "label": "pH", "text": "Un pH cercano a la neutralidad confirma una neutralización correcta y asegura la compatibilidad con distintas formulaciones." },
+        { "label": "Salmonella", "text": "La ausencia es un criterio obligatorio de liberación de lote. La baja humedad del polvo no garantiza por sí sola la inocuidad." }
+      ],
+      "storage": {
+        "temperature": "Menos de 25 °C",
+        "humidity": "Humedad relativa menor a 65 %",
+        "shelfLife": "18 meses",
+        "notes": [
+          "Ambiente seco, limpio, ventilado y protegido de la radiación solar directa.",
+          "Producto higroscópico: si absorbe humedad aumenta la cohesión entre partículas, pierde fluidez y forma terrones.",
+          "Vida útil de 18 meses desde la fecha de elaboración, con el envase cerrado."
+        ]
+      },
+      "presentation": [
+        "Bolsa multicapa de papel kraft, 20 kg netos",
+        "Big bag (FIBC) de 800–1.000 kg para clientes de gran escala (próxima incorporación)"
+      ],
+      "cardPresentation": "Bolsa 20 kg (big bag próximamente)",
+      "applications": ["Cárnicos procesados", "Bebidas proteicas", "Suplementos deportivos", "Alimentos funcionales"],
+      "functional": ["Emulsificación", "Sabor neutro", "Control higroscópico"],
+      "band": { "name": "Verde oscuro", "pantone": "Pantone 356 C", "hex": "#1E5B32" },
+      "pdf": "/docs/ficha-tecnica-spi.pdf",
+      "cardSpecs": [
+        { "label": "Proteína (base seca)", "value": "mín. 90 %" },
+        { "label": "Humedad", "value": "máx. 6,0 %" },
+        { "label": "pH (suspensión 5 %)", "value": "6,9 – 7,6" },
+        { "label": "Grasa libre", "value": "máx. 1,0 %" },
+        { "label": "Cenizas", "value": "máx. 5,0 %" },
+        { "label": "Color", "value": "Blanco crema" },
+        { "label": "Vida útil", "value": "18 meses" },
+        { "label": "Presentación", "value": "Bolsa 20 kg (big bag próximamente)" }
+      ]
+    },
+    {
+      "id": "spc",
+      "sigla": "SPC",
+      "name": "Concentrado de Proteína de Soja",
+      "fullName": "Concentrado de Proteína de Soja (SPC)",
+      "image": "/SPC.png",
+      "badge": "Alta versatilidad · Frigoríficos y panificados",
+      "summary": "La solución más versátil del portafolio para la industria frigorífica y de panificados. Excelente dispersabilidad y retención de agua.",
+      "form": "Polvo fino",
+      "appearance": "Polvo fino homogéneo, beige claro o blanco crema, sabor suave",
+      "yield": "1 t de SPC por cada 1,33 t de white flakes (≈ 75 % en masa)",
+      "process": "Parte de la harina de soja desgrasada. No se aísla la proteína: se eliminan principalmente los azúcares solubles mediante un lavado con etanol acuoso; luego se desolventiza, se seca y se muele.",
+      "overview": [
+        "Polvo fino de color beige claro o blanco crema, sabor suave y contenido proteico entre 65 % y 70 % sobre base seca. El mínimo de 65 % es el que fija la norma Codex CXS 175-1989 para la categoría de concentrado. Conserva más fibra, carbohidratos insolubles y minerales que el aislado, por lo que su rendimiento es considerablemente mayor.",
+        "En productos cárnicos procesados mejora la unión, limita la separación de líquidos y aumenta el rendimiento después de la cocción. En alimentos plant-based e híbridos complementa el perfil proteico y estabiliza la matriz; suele combinarse con TVP, que aporta la textura y la estructura visible, mientras el SPC aporta unión, hidratación y estabilidad."
+      ],
+      "physical": [
+        { "label": "Proteína (base seca)", "value": "65,0 a 70,0 %" },
+        { "label": "Humedad", "value": "Máx. 8,0 %" },
+        { "label": "Grasa", "value": "Máx. 3,0 %" },
+        { "label": "Cenizas", "value": "Máx. 6,0 %" },
+        { "label": "Fibra dietaria total", "value": "Máx. 20,0 %" },
+        { "label": "Sodio", "value": "1.000 a 1.400 mg/100 g" },
+        { "label": "Etanol residual", "value": "A definir en la validación del proceso" },
+        { "label": "Apariencia", "value": "Polvo fino homogéneo" },
+        { "label": "Color", "value": "Beige claro o blanco crema" }
+      ],
+      "microbiological": [
+        { "label": "Recuento total de aerobios", "value": "Máx. 10.000 UFC/g" },
+        { "label": "Salmonella", "value": "Ausencia en 25 g" },
+        { "label": "Coliformes", "value": "Máx. 10 UFC/g" },
+        { "label": "Escherichia coli", "value": "Máx. 3 UFC/g" },
+        { "label": "Mohos y levaduras", "value": "Máx. 100 UFC/g" }
+      ],
+      "controls": [
+        { "label": "Proteína", "text": "Principal parámetro de clasificación comercial. El mínimo de 65 % es el que fija la norma Codex CXS 175-1989 para concentrados." },
+        { "label": "Humedad", "text": "El límite mantiene la estabilidad física y microbiológica del polvo: por encima se favorecen el apelmazamiento y el deterioro, y el cliente pagaría agua en lugar de sólidos funcionales." },
+        { "label": "Grasa", "text": "Confirma que la harina fue correctamente desgrasada; un valor mayor indica deficiencias en la extracción de aceite y aumenta el riesgo de oxidación." },
+        { "label": "Sodio", "text": "Se especifica porque los clientes de alimentos funcionales y suplementos deben declararlo en sus formulaciones." },
+        { "label": "Etanol residual", "text": "El límite se fijará una vez validado el proceso; no se declarará un valor garantizado hasta contar con ensayos sobre producto real." }
+      ],
+      "storage": {
+        "temperature": "Menos de 25 °C",
+        "humidity": "Humedad relativa menor a 65 %",
+        "shelfLife": "18 meses",
+        "notes": [
+          "Depósitos secos, limpios, ventilados y protegidos de la luz solar directa.",
+          "La higroscopicidad es la característica más crítica: si absorbe humedad se forman terrones, se pierde precisión de dosificación y se dificulta la mezcla.",
+          "Una exposición prolongada a ambientes húmedos también altera su velocidad de hidratación.",
+          "Vida útil de 18 meses desde la fecha de elaboración, con el envase cerrado."
+        ]
+      },
+      "presentation": [
+        "Bolsa multicapa de papel kraft, 20 kg netos",
+        "Big bag (FIBC) de 800–1.000 kg para clientes de gran escala (próxima incorporación)"
+      ],
+      "cardPresentation": "Bolsa 20 kg (big bag próximamente)",
+      "applications": ["Cárnicos procesados", "Panificación y confitería", "Sustitutos lácteos", "Sopas"],
+      "functional": ["Emulsificación", "Retención de agua", "Alta dispersabilidad"],
+      "band": { "name": "Verde claro", "pantone": "Pantone 577 C", "hex": "#9CC48A" },
+      "pdf": "/docs/ficha-tecnica-spc.pdf",
+      "cardSpecs": [
+        { "label": "Proteína (base seca)", "value": "65 – 70 %" },
+        { "label": "Humedad", "value": "máx. 8,0 %" },
+        { "label": "Grasa", "value": "máx. 3,0 %" },
+        { "label": "Cenizas", "value": "máx. 6,0 %" },
+        { "label": "Fibra dietaria total", "value": "máx. 20,0 %" },
+        { "label": "Color", "value": "Beige claro o blanco crema" },
+        { "label": "Vida útil", "value": "18 meses" },
+        { "label": "Presentación", "value": "Bolsa 20 kg (big bag próximamente)" }
+      ]
+    },
+    {
+      "id": "tvp",
+      "sigla": "TVP",
+      "name": "Proteína Vegetal Texturizada",
+      "fullName": "Proteína Vegetal Texturizada (TVP)",
+      "image": "/TVP.png",
+      "badge": "Extensor cárnico · Alta eficiencia",
+      "summary": "Extensor cárnico de alta eficiencia técnica y estructural. Absorción de agua de 3,0:1 a 3,4:1 e integridad estructural post-hidratación.",
+      "form": "Granulado, escama o trozo",
+      "appearance": "Partículas expandidas y porosas, beige o castaño claro",
+      "yield": "Prácticamente toda la materia prima se convierte en producto terminado",
+      "process": "Extrusión termomecánica de harina de soja desgrasada: la harina se acondiciona, se somete a alta presión y temperatura, y luego se corta, se seca y se clasifica por tamaño.",
+      "overview": [
+        "Ingrediente proteico seco obtenido por extrusión termomecánica de harina de soja desgrasada. A diferencia del SPI y el SPC no es un polvo, sino partículas expandidas, porosas y resistentes, capaces de hidratarse y reproducir parcialmente la textura de productos cárnicos. Como no se separa ninguna fracción, prácticamente toda la materia prima se convierte en producto terminado.",
+        "Aporta proteína vegetal y una estructura física que, una vez hidratada, puede sustituir parcialmente o complementar ingredientes de origen animal. Se emplea como extensor en hamburguesas, medallones y embutidos, y como base de productos vegetarianos y veganos. Su funcionalidad depende más de la estructura generada en la extrusión que de su composición: velocidad de hidratación, integridad estructural tras hidratar, mezclar y cocinar, y firmeza, elasticidad y cohesión."
+      ],
+      "physical": [
+        { "label": "Proteína (base seca)", "value": "Mín. 46,0 %" },
+        { "label": "Humedad", "value": "Máx. 8,0 %" },
+        { "label": "Grasa", "value": "Máx. 9,0 %" },
+        { "label": "Fibra cruda", "value": "Máx. 3,0 %" },
+        { "label": "Carbohidratos", "value": "Máx. 30,0 %" },
+        { "label": "Cenizas", "value": "Máx. 6,0 %" },
+        { "label": "Actividad ureásica", "value": "Menor a 0,1 UPH" },
+        { "label": "Absorción de agua", "value": "3,0:1 a 3,4:1" },
+        { "label": "Composición", "value": "100 % soja" },
+        { "label": "Materias extrañas", "value": "Ausencia" },
+        { "label": "Forma", "value": "Granulado, escama o trozo" },
+        { "label": "Color", "value": "Beige o castaño claro, sin variaciones significativas" },
+        { "label": "Textura", "value": "Quebradiza y crocante en seco, firme luego de la hidratación" }
+      ],
+      "microbiological": [
+        { "label": "Recuento bacteriano total", "value": "Máx. 20.000 UFC/g" },
+        { "label": "Coliformes fecales", "value": "Ausencia en 1 g" },
+        { "label": "Salmonella", "value": "Ausencia en 50 g" },
+        { "label": "Clostridium perfringens", "value": "Máx. 100 UFC/g" },
+        { "label": "Staphylococcus aureus", "value": "Ausencia en 1 g" },
+        { "label": "Mohos y levaduras", "value": "Máx. 50 UFC/g" },
+        { "label": "Aflatoxinas totales", "value": "Máx. 4,0 µg/kg" },
+        { "label": "Aflatoxina B1", "value": "Máx. 2,0 µg/kg" }
+      ],
+      "controls": [
+        { "label": "Proteína", "text": "El mínimo de 46 % es inferior al del SPI y el SPC porque la TVP conserva una mayor proporción de carbohidratos, fibra y minerales." },
+        { "label": "Humedad", "text": "El 8 % máximo garantiza la estabilidad en almacenamiento. Por encima, el producto pierde crocancia, se vuelve más susceptible al desarrollo microbiológico y reduce su vida útil." },
+        { "label": "Grasa", "text": "Se controla porque un contenido elevado aumenta el riesgo de oxidación y sabores rancios; depende de la eficiencia del desgrasado previo a la extrusión." },
+        { "label": "Aflatoxinas", "text": "Se controlan tanto en la materia prima como en el producto terminado: aunque la soja presenta menor riesgo que otros cultivos, la contaminación por micotoxinas no puede descartarse." },
+        { "label": "Salmonella", "text": "La ausencia es criterio obligatorio de liberación. La extrusión aplica temperaturas elevadas, pero el producto puede recontaminarse durante corte, secado, tamizado o envasado." }
+      ],
+      "grades": [
+        { "grade": "TVP fina", "size": "Menor a 3 mm", "use": "Rellenos, salsas, empanadas y productos picados" },
+        { "grade": "TVP media", "size": "3 a 7 mm", "use": "Hamburguesas, medallones y embutidos" },
+        { "grade": "TVP gruesa", "size": "7 a 12 mm", "use": "Trozos, guisos y productos tipo carne desmenuzada" }
+      ],
+      "densityNote": "La densidad aparente disminuye a medida que aumenta la expansión: va de 700–800 g/L en partículas muy finas a 150–230 g/L en las gruesas y expandidas. Define cuánto producto entra en cada bolsa y el volumen necesario en depósito.",
+      "textureNotes": [
+        "La velocidad de hidratación indica cuánto tarda el producto en alcanzar la textura adecuada.",
+        "La integridad estructural se evalúa después de hidratar, mezclar y cocinar: una proteína texturizada de baja calidad se desarma y se convierte en pasta.",
+        "La firmeza, la elasticidad y la cohesión definen la mordida; la firmeza se mide con un analizador de textura sobre partículas hidratadas.",
+        "La uniformidad granulométrica es esencial: un exceso de finos acelera la absorción de agua y altera la textura final."
+      ],
+      "storage": {
+        "temperature": "Menos de 25 °C",
+        "humidity": "Humedad relativa menor a 65 %",
+        "shelfLife": "24 meses",
+        "notes": [
+          "Ambiente seco, limpio, ventilado y protegido de la luz solar directa.",
+          "Su estructura porosa absorbe humedad y olores: no almacenar junto a productos químicos, combustibles o materiales aromáticos.",
+          "Vida útil de 24 meses desde la fecha de elaboración, con el envase cerrado; superior a la del SPI y el SPC por su estructura seca y el tratamiento térmico de la extrusión."
+        ]
+      },
+      "presentation": [
+        "Bolsa multicapa de papel kraft, 20 kg netos",
+        "Big bag (FIBC) de 800–1.000 kg para clientes de gran escala (próxima incorporación)"
+      ],
+      "cardPresentation": "Bolsa 20 kg (big bag próximamente)",
+      "applications": ["Hamburguesas y medallones", "Chacinados y embutidos", "Panificación", "Sustitutos y sopas"],
+      "functional": ["Retención de agua", "Textura post-hidratación", "Dispersabilidad"],
+      "band": { "name": "Marrón", "pantone": "Pantone 463 C", "hex": "#6B4423" },
+      "pdf": "/docs/ficha-tecnica-tvp.pdf",
+      "cardSpecs": [
+        { "label": "Proteína (base seca)", "value": "mín. 46 %" },
+        { "label": "Humedad", "value": "máx. 8,0 %" },
+        { "label": "Grasa", "value": "máx. 9,0 %" },
+        { "label": "Fibra cruda", "value": "máx. 3,0 %" },
+        { "label": "Carbohidratos", "value": "máx. 30 %" },
+        { "label": "Absorción de agua", "value": "3,0:1 a 3,4:1" },
+        { "label": "Granulometría", "value": "fina <3 · media 3–7 · gruesa 7–12 mm" },
+        { "label": "Vida útil", "value": "24 meses" },
+        { "label": "Presentación", "value": "Bolsa 20 kg (big bag próximamente)" }
+      ]
+    }
+  ]
+}

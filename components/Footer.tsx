@@ -1,11 +1,18 @@
 import Image from 'next/image';
 
 const links = [
-  { label: 'Productos',       href: '#productos' },
-  { label: 'Qué Hacemos',    href: '#que-hacemos' },
-  { label: 'Sustentabilidad', href: '#sustentabilidad' },
-  { label: 'Clientes',        href: '#clientes' },
-  { label: 'Contacto',        href: '#contacto' },
+  { label: 'Productos',       href: '/#productos' },
+  { label: 'Qué Hacemos',    href: '/#que-hacemos' },
+  { label: 'Sustentabilidad', href: '/#sustentabilidad' },
+  { label: 'Clientes',        href: '/#clientes' },
+  { label: 'Contacto',        href: '/#contacto' },
+];
+
+const resources = [
+  { label: 'Fichas técnicas',     href: '/fichas-tecnicas' },
+  { label: 'Manuales',            href: '/manuales' },
+  { label: 'Catálogos',           href: '/catalogos' },
+  { label: 'Calidad y normativa', href: '/calidad' },
 ];
 
 
@@ -13,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="bg-pt-gray text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           {/* Logo + tagline */}
           <div>
             <Image
@@ -36,6 +43,22 @@ export default function Footer() {
             </p>
             <ul className="space-y-2.5">
               {links.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} className="text-white/70 hover:text-white text-sm transition-colors">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Recursos */}
+          <div>
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-4">
+              Recursos
+            </p>
+            <ul className="space-y-2.5">
+              {resources.map((l) => (
                 <li key={l.href}>
                   <a href={l.href} className="text-white/70 hover:text-white text-sm transition-colors">
                     {l.label}

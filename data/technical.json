@@ -1,0 +1,223 @@
+{
+  "contact": {
+    "email": "contacto@proterra.com.ar",
+    "phone": "+54 9 11 2305-0912",
+    "location": "Polo Industrial San Lorenzo, Santa Fe, Argentina",
+    "web": "www.proterra.com.ar"
+  },
+  "documents": [
+    {
+      "id": "ficha-spi",
+      "kind": "ficha",
+      "title": "Ficha técnica SPI",
+      "subtitle": "Aislado de Proteína de Soja",
+      "description": "Especificaciones fisicoquímicas y microbiológicas, criterios de control, almacenamiento y presentación.",
+      "file": "/docs/ficha-tecnica-spi.pdf",
+      "thumb": "/docs/thumbs/ficha-tecnica-spi.png",
+      "pages": 2
+    },
+    {
+      "id": "ficha-spc",
+      "kind": "ficha",
+      "title": "Ficha técnica SPC",
+      "subtitle": "Concentrado de Proteína de Soja",
+      "description": "Especificaciones fisicoquímicas y microbiológicas, criterios de control, almacenamiento y presentación.",
+      "file": "/docs/ficha-tecnica-spc.pdf",
+      "thumb": "/docs/thumbs/ficha-tecnica-spc.png",
+      "pages": 2
+    },
+    {
+      "id": "ficha-tvp",
+      "kind": "ficha",
+      "title": "Ficha técnica TVP",
+      "subtitle": "Proteína Vegetal Texturizada",
+      "description": "Especificaciones, grados granulométricos, densidad aparente, criterios de textura y almacenamiento.",
+      "file": "/docs/ficha-tecnica-tvp.pdf",
+      "thumb": "/docs/thumbs/ficha-tecnica-tvp.png",
+      "pages": 3
+    },
+    {
+      "id": "catalogo",
+      "kind": "catalogo",
+      "title": "Catálogo de productos 2026",
+      "subtitle": "Portafolio SPI · SPC · TVP",
+      "description": "Comparativo del portafolio, resumen técnico de cada producto, packaging, calidad y normativa.",
+      "file": "/docs/catalogo-pro-terra-2026.pdf",
+      "thumb": "/docs/thumbs/catalogo-pro-terra-2026.png",
+      "pages": 6
+    },
+    {
+      "id": "manual-almacenamiento",
+      "kind": "manual",
+      "title": "Manual de almacenamiento y manipulación",
+      "subtitle": "SPI · SPC · TVP",
+      "description": "Condiciones de depósito, higroscopicidad, estiba, rotación FEFO y qué hacer ante desvíos.",
+      "file": "/docs/manual-almacenamiento-y-manipulacion.pdf",
+      "thumb": "/docs/thumbs/manual-almacenamiento-y-manipulacion.png",
+      "pages": 3
+    },
+    {
+      "id": "manual-packaging",
+      "kind": "manual",
+      "title": "Manual de packaging e identificación",
+      "subtitle": "Bolsa 20 kg · Big bag · Trazabilidad",
+      "description": "Planos y capas de la bolsa, big bag, código de color, rotulado y lectura del código de lote.",
+      "file": "/docs/manual-packaging-e-identificacion.pdf",
+      "thumb": "/docs/thumbs/manual-packaging-e-identificacion.png",
+      "pages": 4
+    }
+  ],
+  "storage": {
+    "temperature": "Menos de 25 °C",
+    "humidity": "Humedad relativa menor a 65 %",
+    "environment": "Ambiente seco, limpio, ventilado y protegido de la luz solar directa",
+    "shelfLife": [
+      { "product": "SPI", "value": "18 meses" },
+      { "product": "SPC", "value": "18 meses" },
+      { "product": "TVP", "value": "24 meses" }
+    ],
+    "productNotes": [
+      { "product": "SPI", "text": "Producto higroscópico. Si absorbe humedad aumenta la cohesión entre partículas, pierde fluidez y forma terrones." },
+      { "product": "SPC", "text": "Si absorbe humedad se forman terrones y se reduce la precisión de dosificación. La exposición prolongada a ambientes húmedos altera su velocidad de hidratación." },
+      { "product": "TVP", "text": "Su estructura porosa absorbe humedad y olores: no debe almacenarse junto a productos químicos, combustibles o materiales aromáticos. Es frágil: una manipulación brusca genera finos fuera de especificación." }
+    ],
+    "logistics": [
+      { "label": "Pallet", "value": "Normalizado ARLOG (IRAM 10016), 1.200 × 1.000 mm" },
+      { "label": "Consolidación", "value": "30 bolsas por pallet (600 kg netos)" },
+      { "label": "Rotación de stock", "value": "FEFO (First Expired, First Out)" },
+      { "label": "Manipulación de pallets", "value": "Autoelevador o apilador" },
+      { "label": "Manipulación de bolsas", "value": "Manual, bajo procedimientos ergonómicos" },
+      { "label": "Transporte", "value": "Camión furgón cerrado / semirremolque" }
+    ]
+  },
+  "packaging": {
+    "bag": {
+      "name": "Bolsa multicapa de papel kraft",
+      "net": "20 kg netos",
+      "dimensions": [
+        { "label": "Alto", "value": "700 mm" },
+        { "label": "Ancho", "value": "350 mm" },
+        { "label": "Fuelle / profundidad", "value": "120 mm" },
+        { "label": "Cierre", "value": "Cosido y termosellado" },
+        { "label": "Atmósfera", "value": "Envasado con inyección de nitrógeno" }
+      ],
+      "layers": [
+        { "name": "Capa externa", "material": "Papel kraft 80 g/m²", "function": "Resistencia a la tracción, al roce y a impactos moderados. Superficie de impresión: marca, producto, lote y datos regulatorios." },
+        { "name": "Capas intermedias (×2)", "material": "Papel kraft ≈ 70 g/m² cada una", "function": "Rigidez estructural y distribución de cargas durante la estiba, evitando deformación o desgarro." },
+        { "name": "Capa barrera", "material": "Película de polietileno 15 µm", "function": "Reduce el ingreso de humedad y oxígeno. Crítico: los tres productos son higroscópicos." },
+        { "name": "Capa interna (liner)", "material": "Polietileno apto contacto con alimentos ≈ 60 µm", "function": "Única superficie en contacto con el producto. Impide ingreso de humedad, evita fugas de producto fino y permite cierre hermético por termosellado." }
+      ],
+      "targets": [
+        { "label": "Resistencia a la tracción", "value": "Igual o superior a 120 N" },
+        { "label": "Resistencia a la ruptura", "value": "Igual o superior a 200 N" },
+        { "label": "Integridad del cierre", "value": "Sin pérdidas ni apertura durante el transporte" }
+      ],
+      "targetsNote": "Objetivos de diseño del envase, a validar."
+    },
+    "bigBag": {
+      "name": "Big bag (FIBC)",
+      "note": "Presentación para clientes de gran escala, de próxima incorporación.",
+      "specs": [
+        { "label": "Capacidad neta", "value": "800 – 1.000 kg" },
+        { "label": "Dimensiones base", "value": "900 × 900 mm" },
+        { "label": "Altura (sin asas)", "value": "1.100 mm" },
+        { "label": "Altura total (con asas)", "value": "1.600 mm aprox." },
+        { "label": "Peso de la bolsa vacía", "value": "1,8 – 2,2 kg" },
+        { "label": "Carga máxima segura (SWL)", "value": "1.250 kg" },
+        { "label": "Factor de seguridad", "value": "5:1" },
+        { "label": "Material", "value": "Polipropileno virgen" },
+        { "label": "Tipo de tejido", "value": "Circular / tubular" },
+        { "label": "Revestimiento interno", "value": "Liner de PE" },
+        { "label": "Descarga", "value": "Válvula inferior tipo pétalo" },
+        { "label": "Protección UV", "value": "Sí (trama con aditivo UV)" },
+        { "label": "Impresión", "value": "1–2 tintas" }
+      ]
+    },
+    "colors": [
+      { "sigla": "SPI", "name": "Verde oscuro", "pantone": "Pantone 356 C", "hex": "#1E5B32", "meaning": "Transmite la pureza y especialización técnica del aislado." },
+      { "sigla": "SPC", "name": "Verde claro", "pantone": "Pantone 577 C", "hex": "#9CC48A", "meaning": "Mantiene la asociación con la soja, pero distingue al SPC del SPI." },
+      { "sigla": "TVP", "name": "Marrón", "pantone": "Pantone 463 C", "hex": "#6B4423", "meaning": "Remite a la apariencia tostada y granulada de la TVP." }
+    ],
+    "colorNote": "Los tres productos comparten identidad (papel kraft natural y logotipo Pro-Terra) y se diferencian por una franja cromática. El color no es el único medio de identificación.",
+    "label": [
+      "Nombre completo del producto y su sigla",
+      "Peso neto",
+      "Lote",
+      "Condiciones de almacenamiento",
+      "RNE y RNPA",
+      "Declaración de alérgenos",
+      "Leyenda de ingrediente para uso industrial"
+    ]
+  },
+  "traceability": {
+    "format": "PRODUCTO-FECHA-TURNO-LOTE",
+    "example": "SPI-260618-T2-0034",
+    "parts": [
+      { "code": "SPI", "label": "Producto", "text": "Sigla del producto (SPI, SPC o TVP)" },
+      { "code": "260618", "label": "Fecha", "text": "Año, mes y día de elaboración (AAMMDD)" },
+      { "code": "T2", "label": "Turno", "text": "Turno de producción" },
+      { "code": "0034", "label": "Nro. de lote", "text": "Número de lote dentro del turno" }
+    ],
+    "records": [
+      "Certificado de análisis de materia prima",
+      "Hoja de ruta de lote",
+      "Registro de temperatura y pH en tiempo real",
+      "Resultados de laboratorio",
+      "Certificado de análisis del producto terminado",
+      "Registro de entrega al cliente"
+    ],
+    "facts": [
+      { "label": "Retención de registros", "value": "Mínimo 5 años desde la elaboración, o vida útil + 1 año (lo que resulte mayor)" },
+      { "label": "Identificación y bloqueo de lotes", "value": "Hasta 4 horas" },
+      { "label": "Notificación a ANMAT", "value": "Dentro de las 24 horas si el riesgo es grave" },
+      { "label": "Almacenamiento de registros", "value": "Digital, con respaldo periódico, y archivo físico para certificados originales firmados" }
+    ]
+  },
+  "poe": [
+    { "code": "POE-01", "name": "Recepción y control de materia prima", "text": "Pesaje y muestreo representativo; control de humedad (≤ 13,5 %), cuerpos extraños (≤ 1 %) y aflatoxinas (< 20 µg/kg); liberación o rechazo del lote antes de la descarga." },
+    { "code": "POE-02", "name": "Limpieza y sanitización (CIP)", "text": "Enjuague, solución alcalina, tratamiento ácido y enjuague final, con verificación por conductividad o pH antes de reiniciar la producción." },
+    { "code": "POE-03", "name": "Calibración de instrumentos", "text": "Calibración periódica de balanzas y sensores, archivo de certificados y retiro de servicio ante resultados fuera de tolerancia." },
+    { "code": "POE-04", "name": "No conformidades y reproceso", "text": "Identificación y cuarentena del lote, análisis de causa raíz y definición de reproceso, descarte o liberación condicional documentada." },
+    { "code": "POE-05", "name": "Retiro de producto", "text": "Bloqueo de stock, comunicación a clientes y, cuando corresponda, a la autoridad sanitaria, con investigación y cierre documentado." },
+    { "code": "POE-06", "name": "Capacitación e higiene del personal", "text": "Inducción inicial en BPM, capacitación periódica y verificación diaria de indumentaria y prácticas de higiene." },
+    { "code": "POE-07", "name": "Gestión de reclamos", "text": "Registro y respuesta inicial, investigación del lote, causa raíz, acciones correctivas y comunicación del cierre al cliente." }
+  ],
+  "methods": [
+    { "org": "AOAC International", "items": [
+      { "code": "AOAC 992.23", "param": "Proteína (Dumas)" },
+      { "code": "AOAC 925.10", "param": "Humedad" },
+      { "code": "AOAC 943.02", "param": "pH" },
+      { "code": "AOAC 922.06", "param": "Grasa (hidrólisis ácida)" },
+      { "code": "AOAC 991.43", "param": "Fibra dietaria" },
+      { "code": "AOAC 985.35", "param": "Sodio (AAS)" },
+      { "code": "AOAC 962.09", "param": "Fibra cruda" },
+      { "code": "AOAC 990.33", "param": "Aflatoxinas" }
+    ]},
+    { "org": "AOCS", "items": [
+      { "code": "AOCS Ba 3-38", "param": "Grasa (extracción con éter de petróleo)" },
+      { "code": "AOCS Ba 5-49", "param": "Cenizas" },
+      { "code": "AOCS Ba 9a-52", "param": "Actividad ureásica (UPH)" }
+    ]},
+    { "org": "FDA BAM", "items": [
+      { "code": "FDA BAM", "param": "Análisis microbiológicos (Bacteriological Analytical Manual)" }
+    ]}
+  ],
+  "regulatory": [
+    { "name": "Habilitación municipal e industrial", "authority": "Municipalidad de San Lorenzo", "enables": "Radicación y funcionamiento del establecimiento en el Polo Industrial San Lorenzo" },
+    { "name": "Certificado de aptitud ambiental", "authority": "Autoridad ambiental de Santa Fe (Ley N° 11.717)", "enables": "Construcción y operación" },
+    { "name": "RNE — Registro Nacional de Establecimiento", "authority": "Autoridad bromatológica de Santa Fe, con alcance nacional vía INAL/ANMAT (SIFeGA)", "enables": "Elaborar alimentos" },
+    { "name": "RNPA — Registro Nacional de Producto Alimenticio", "authority": "Autoridad bromatológica de Santa Fe, sistema SIFeGA", "enables": "Comercializar SPI, SPC y TVP (uno por producto)" },
+    { "name": "RENPRE — Registro Nacional de Precursores Químicos", "authority": "SEDRONAR", "enables": "Adquirir y almacenar insumos químicos controlados" },
+    { "name": "Generador de residuos peligrosos", "authority": "Autoridad ambiental de Santa Fe (Ley N° 24.051, Decreto N° 831/93, Decreto Provincial N° 1844/02)", "enables": "Generar y entregar residuos a operadores registrados" }
+  ],
+  "iso": {
+    "name": "ISO 22000:2018 — Sistemas de gestión de la inocuidad de los alimentos",
+    "text": "Certificación voluntaria, contemplada en el plan de la empresa. No es exigible por norma, pero es la condición que los clientes industriales de mayor volumen imponen para incorporar un proveedor a su lista aprobada."
+  },
+  "standards": [
+    "Código Alimentario Argentino (Ley N° 18.284) — buenas prácticas de manufactura",
+    "Codex Alimentarius CXS 175-1989 — proteínas vegetales (categoría concentrado, mínimo 65 %)",
+    "IRAM 10016 — pallet normalizado ARLOG",
+    "NIMF 15 — tratamiento fitosanitario de pallets de madera"
+  ]
+}

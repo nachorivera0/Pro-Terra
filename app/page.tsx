@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import WhyUs from '@/components/WhyUs';
 import Products from '@/components/Products';
+import Resources from '@/components/Resources';
 import WhatWeDo from '@/components/WhatWeDo';
 import OurPlant from '@/components/OurPlant';
 import Sustainability from '@/components/Sustainability';
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <WhyUs />
         <Products />
+        <Resources />
         <WhatWeDo />
         <OurPlant />
         <Sustainability />
