@@ -149,7 +149,7 @@ const header = (kind, sub) => `
 
 const footer = (n, total, note) => `
   <div class="ftr">
-    <div>${esc(note || `Pro-Terra · ${tech.contact.location}`)}<br/>${esc(tech.contact.email)} · ${esc(tech.contact.phone)} · ${esc(tech.contact.web)}</div>
+    <div>${esc(note || `Pro-Terra · ${tech.contact.location}`)}<br/>${esc(tech.contact.email)} · ${esc(tech.contact.phone)}</div>
     <div class="n">${n} / ${total}</div>
   </div>`;
 
@@ -237,7 +237,7 @@ function catalogo() {
     <div class="prods">
       ${P.map((p) => `<div style="background-image:url('${photo(p)}')"><span>${p.sigla}</span></div>`).join('')}
     </div>
-    <div class="foot"><span>${esc(tech.contact.email)}</span><span>${esc(tech.contact.web)}</span></div>
+    <div class="foot"><span>${esc(tech.contact.email)}</span><span>${esc(tech.contact.phone)}</span></div>
   </section>`;
 
   const row = (label, fn) => `<tr><th>${esc(label)}</th>${P.map((p) => `<td>${esc(fn(p))}</td>`).join('')}</tr>`;
@@ -300,7 +300,7 @@ function catalogo() {
         { label: 'Presentación', value: 'Bolsa multicapa 20 kg' },
       ])}</div>
     </div>
-    ${footer(n, total, `${p.sigla}: ver ficha técnica completa en ${tech.contact.web}`)}
+    ${footer(n, total, `${p.sigla}: solicitá la ficha técnica completa a ${tech.contact.email}`)}
   </section>`;
 
   const closing = `

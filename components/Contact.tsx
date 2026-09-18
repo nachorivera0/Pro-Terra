@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Link2, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Link2 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const iconClass = 'w-7 h-7 text-[#2E7D3E] flex-shrink-0 mt-0.5';
@@ -28,14 +28,8 @@ const contactItems = [
   {
     icon: <Link2 className={iconClass} />,
     label: 'LinkedIn',
-    value: '/pro-terra-prerotienes',
-    href: 'https://linkedin.com/company/pro-terra-prerotienes',
-  },
-  {
-    icon: <Globe className={iconClass} />,
-    label: 'Web',
-    value: 'www.proterra.com.ar',
-    href: 'https://www.proterra.com.ar',
+    value: '/pro-terra-empresa',
+    href: 'https://www.linkedin.com/company/pro-terra-empresa/',
   },
 ];
 

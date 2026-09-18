@@ -83,7 +83,7 @@ export default function Footer() {
               <li>San Lorenzo, Santa Fe</li>
               <li>
                 <a
-                  href="https://linkedin.com/company/pro-terra-prerotienes"
+                  href="https://www.linkedin.com/company/pro-terra-empresa/"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-white transition-colors"
